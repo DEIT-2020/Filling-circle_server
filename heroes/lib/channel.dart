@@ -7,13 +7,14 @@ import 'controller/heroes_controller.dart';
 /// database connections. See http://aqueduct.io/docs/http/channel/.
 
 class HeroConfig extends Configuration {
-  HeroConfig(String path): super.fromFile(File(path));
+  HeroConfig(String path) : super.fromFile(File(path));
 
   DatabaseConfiguration database;
 }
 
 class HeroesChannel extends ApplicationChannel {
   ManagedContext context;
+
   /// Initialize services in this method.
   ///
   /// Implement this method to initialize services, read values from [options]
@@ -21,21 +22,21 @@ class HeroesChannel extends ApplicationChannel {
   ///
   /// This method is invoked prior to [entryPoint] being accessed.
   @override
-Future prepare() async {
-  logger.onRecord.listen(
-      (rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
+  Future prepare() async {
+    logger.onRecord.listen(
+        (rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
 
-  final config = HeroConfig(options.configurationFilePath);
-  final dataModel = ManagedDataModel.fromCurrentMirrorSystem();
-  final persistentStore = PostgreSQLPersistentStore.fromConnectionInfo(
-      config.database.username,
-      config.database.password,
-      config.database.host,
-      config.database.port,
-      config.database.databaseName);
+    final config = HeroConfig(options.configurationFilePath);
+    final dataModel = ManagedDataModel.fromCurrentMirrorSystem();
+    final persistentStore = PostgreSQLPersistentStore.fromConnectionInfo(
+        config.database.username,
+        config.database.password,
+        config.database.host,
+        config.database.port,
+        config.database.databaseName);
 
-  context = ManagedContext(dataModel, persistentStore);
-}
+    context = ManagedContext(dataModel, persistentStore);
+  }
 
   /// Construct the request channel.
   ///
@@ -43,19 +44,16 @@ Future prepare() async {
   /// of all [Request]s.
   ///
   /// This method is invoked after [prepare].
- @override
-Controller get entryPoint {
-  final router = Router();
+  @override
+  Controller get entryPoint {
+    final router = Router();
 
-  router
-    .route("/heroes/[:id]")
-    .link(() => HeroesController(context));
+    router.route("/heroes/[:id]").link(() => HeroesController(context));
 
-  router
-    .route("/example")
-    .linkFunction((request) async {
+    router.route("/example").linkFunction((request) async {
       return new Response.ok({"key": "value"});
-  });
+    });
 
-  return router;
+    return router;
+  }
 }

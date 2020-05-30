@@ -1,4 +1,4 @@
-import 'package:heroes/heroes.dart';
+import "package:zubuzu/zubuzu.dart";
 
 class Hero extends ManagedObject<_Hero> implements _Hero {}
 
