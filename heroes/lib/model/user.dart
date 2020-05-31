@@ -1,6 +1,6 @@
-import "package:ctwz/ctwz.dart";
+import "package:heroes/heroes.dart";
 import 'package:aqueduct/managed_auth.dart';
-import 'package:ctwz/model/allpass.dart';
+
 import 'package:aqueduct/aqueduct.dart';
 
 
@@ -12,9 +12,6 @@ class User extends ManagedObject<_User>
 class _User extends ResourceOwnerTableDefinition {
   @Column(unique:true)
   String email;
-
-  //@Column(nullable:true)
-  //bool isWoman;//是否为女
 }
 
 
@@ -22,7 +19,7 @@ class _User extends ResourceOwnerTableDefinition {
 
 
    
-//class Ctwz extends ManagedObject<_Ctwz> implements _Ctwz {}
+//class heroes extends ManagedObject<_Ctwz> implements _Ctwz {}
 
 /*class _Ctwz {
   @primaryKey

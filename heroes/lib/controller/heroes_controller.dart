@@ -1,5 +1,5 @@
 import 'package:aqueduct/aqueduct.dart';
-import 'package:zubuzu/zubuzu.dart';
+import 'package:heroes/heroes.dart';
 import 'package:heroes/model/hero.dart';
 
 class HeroesController extends ResourceController {

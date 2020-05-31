@@ -1,4 +1,4 @@
-import 'package:zubuzu/zubuzu.dart';
+import 'package:heroes/heroes.dart';
 
 Future main() async {
   final app = Application<HeroesChannel>()
