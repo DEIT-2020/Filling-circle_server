@@ -1,7 +1,7 @@
-import 'package:heroes/heroes.dart';
+import 'package:heroes/zbz.dart';
 import 'package:aqueduct_test/aqueduct_test.dart';
 
-export 'package:heroes/heroes.dart';
+export 'package:heroes/zbz.dart';
 export 'package:aqueduct_test/aqueduct_test.dart';
 export 'package:test/test.dart';
 export 'package:aqueduct/aqueduct.dart';
