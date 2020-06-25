@@ -1,4 +1,4 @@
-import "package:heroes/zbz.dart";
+import "package:heroes/heroes.dart";
 import 'package:aqueduct/managed_auth.dart';
 
 import 'package:aqueduct/aqueduct.dart';
