@@ -1,10 +1,92 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
+#header {
+  background-color: black;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+}
 
-body {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 5vw;
+#header-logodiv {
+  width: 60px;
+  height: 70px;
+  padding-top: 10px;
+  margin: 0 10px;
+}
+
+#logo {
+  height: 60px;
+  width: 60px;
+}
+
+#header-name {
+  line-height: 80px;
+  font-size: 40px;
+}
+
+#menu {
+  background-color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 24px;
+  height: 40px;
+  width: 100%;
+}
+
+#transfer {
+  width: 120px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+#transfer-imgdiv {
+  height: 30px;
+  width: 30px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+#menu-img {
+  height: 30px;
+  width: 30px;
+}
+
+#night {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: absolute;
+  right: 10px;
+  font-size: 22px;
+}
+
+#content {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 550px;
+}
+
+#transfer-button {
+  line-height: 550px;
+  margin: 10px;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  clear: both;
+  text-align: center;
+  padding: 5px;
 }
 
 * {

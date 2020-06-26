@@ -1,14 +1,56 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>angular</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script defer src="main.dart.js"></script>
-  </head>
-  <body>
-    <my-app>Loading...</my-app>
-  </body>
+
+<head>
+
+  <title>Filling Circle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="/icon/circle.png">
+  <script defer src="main.dart.js"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div id="header-logodiv"><img id="logo" src="/icon/circle.png"></div>
+    <div id="header-name">填 填 圈</div>
+  </div>
+  <div id="menu">
+    <div id="transfer">
+      <div id="transfer-imgdiv"><img id="menu-img" src="/icon/transfer.png"></div>
+      <div>转换</div>
+    </div>
+    <div id="transfer">
+      <div id="transfer-imgdiv"><img id="menu-img" src="/icon/collect.png"></div>
+      <div>收藏</div>
+    </div>
+    <div id="night">
+      <div id="transfer-imgdiv"><img id="menu-img" src="/icon/night.png"></div>
+      <div>夜间模式</div>
+    </div>
+  </div>
+  <div id="content">
+    <div id="input"><textarea rows="30" cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea>
+      </textarea></div>
+      <div id="transfer-button">转换吧！</div>
+    <div id="output">
+      <div id="model1"><textarea rows="15" cols="100" placeholder="模块1"></textarea>
+        </textarea></div>
+      <div id="model2"><textarea rows="15" cols="100" placeholder="模块2"></textarea>
+        </textarea></div>
+    </div>
+  </div>
+
+
+
+
+  <div id="footer">
+    ©2020 Zubuzu. All rights reserved.
+  </div>
+
+  <my-app>Loading...</my-app>
+</body>
+
 </html>
