@@ -6,6 +6,10 @@ import 'package:angular_dart/app_component.template.dart' as ng;
 InputElement inputcontent;
 OutputElement outputcontent;
 
+
+var response=await http.get('index.html');
+Document outputcontent=parse(respose.body);
+
 void main() {
   runApp(ng.AppComponentNgFactory);}
 
@@ -15,6 +19,7 @@ void getstring(){
 }
 
 void transferpp(){
+ 
+
   
 }
-  
