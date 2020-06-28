@@ -7,14 +7,24 @@ import 'package:angular_dart/app_component.template.dart' as ng;
 // InputElement submit;
 // OutputElement outputcontent;
 
+<<<<<<< HEAD
 // void main() {
 //   runApp(ng.AppComponentNgFactory);}
+=======
+
+var response=await http.get('index.html');
+Document outputcontent=parse(respose.body);
+
+void main() {
+  runApp(ng.AppComponentNgFactory);}
+>>>>>>> wanningjing
 
 // void getstring(){
 //   inputcontent = querySelector('#inputcontent');
 //   outputcontent=querySelector('#outputcontent');
 // }
 
+<<<<<<< HEAD
 // void transferpp(){
   
 // }
@@ -36,3 +46,10 @@ void main() {
   });
 }
   
+=======
+void transferpp(){
+ 
+
+  
+}
+>>>>>>> wanningjing
