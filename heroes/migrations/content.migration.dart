@@ -13,7 +13,7 @@ class Migration1 extends Migration {
          isUnique: false),
 
          SchemaColumn("userid", ManagedPropertyType.string, 
-         isPrimaryKey: ture, 
+         isPrimaryKey: true, 
          autoincrement: false, 
          isIndexed: false, 
          isNullable: false, 
