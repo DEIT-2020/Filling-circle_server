@@ -35,6 +35,7 @@
 
 #container {
   width: 100%;
+  height: 550px;
 }
 
 .containerT {
@@ -193,7 +194,7 @@ form button:hover {
 #inputcontent {
   height: 500px;
   width: 600px;
-margin-left: 40px;
+  margin-left: 40px;
   color: rgb(247, 247, 247);
   font-family: 楷体;
   font-size: 40px;
@@ -218,14 +219,10 @@ margin-left: 40px;
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: bottom;
-
 }
 
 #transfer-button-div {
-
-  background-color: red;
   margin: auto 20px;
-
 }
 
 #transfer-button {

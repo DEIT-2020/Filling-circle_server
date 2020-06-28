@@ -11,6 +11,14 @@
 </head>
 
 <body>
+  <!-- <p>
+    From local storage: <output id="username-output"></output>
+    </p>
+    
+    <input type="text" name="username" id="username"> -->
+
+
+
   <a href="index.html">
     <div id="header">
       <div id="header-logodiv"><img id="logo" src="/icon/circle2.png"></div>
@@ -41,20 +49,24 @@
 
   <div id="content">
     <div id="input">
-      <textarea rows="30" cols="100" type="text" ng-model="transfer-button" name="inputcontent" id="inputcontent"
+      <!-- <textarea rows="30" cols="100" type="text" ng-model="transfer-button" name="inputcontent" id="inputcontent"
+        cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea> -->
+        <textarea rows="30" cols="100" type="text" ng-model="transfer-button" name="username" id="username"
         cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea>
 
     </div>
-
-    <div id="transfer-button-div">
-      <button type="button" id="transfer-button" ng-disabled="transfer-button"
-        (click)="onClickMe()">点击转换</button>
-    </div>
-
+    <!-- <div id="transfer-button-div">
+      <button type="submit" id="transfer-button" ng-disabled="transfer-button"
+        (click)="transferpp()">点击转换</button>
+    </div> -->
+    <input type="submit" id="save" value="Save">
     <div id="output">
-      <textarea rows="30" cols="100" type="text" name="outputcontent" id="outputcontent"
-        placeholder="点击转换获得内容"></textarea>
+      <!-- <textarea rows="30" cols="100" type="text" name="outputcontent" id="outputcontent"
+        placeholder="点击转换获得内容"></textarea> -->
 
+        <textarea rows="30" cols="100" type="text" name="username-output" id="username-output"
+        placeholder="点击转换获得内容"></textarea>
+        <output id="username-output"></output>
     </div>
 
   </div>
@@ -62,7 +74,7 @@
     ©2020 Zubuzu. All rights reserved.
   </div>
 
-  <my-app>Loading...</my-app>
+  <!-- <my-app>Loading...</my-app> -->
 </body>
 
 </html>
