@@ -25,10 +25,13 @@
 #header-name {
   line-height: 80px;
   font-size: 40px;
+  font-family: 楷体;
+  margin-top:4px;
+
 }
 
 #menu {
-  background-color: white;
+  background-color: #e6d8d8;
   text-align: left;
   display: flex;
   flex-direction: row;
@@ -36,6 +39,10 @@
   font-size: 24px;
   height: 40px;
   width: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  font-family: 楷体;
 }
 
 #transfer {
@@ -44,13 +51,15 @@
   margin-bottom: 5px;
   display: flex;
   flex-direction: row;
+  font-family: 楷体;
 }
 
 #transfer-imgdiv {
   height: 30px;
   width: 30px;
-  margin-top: 2px;
+  margin-top: -1px;
   margin-right: 5px;
+
 }
 
 #menu-img {
@@ -68,20 +77,78 @@
   font-size: 22px;
 }
 
-#content {
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 550px;
+#inputcontent{
+  position: absolute;
+  margin-top:0px;
+  font-family: 楷体;
+  color: rgb(247, 247, 247);
+  margin-left: 120px;
+  padding:100px;
+  height:500px;
+  width: 600px;
+  vertical-align:top;
+  border: 3px solid rgb(235, 193, 193);
+  padding:0px;
+  padding-top:0px;
+  border-radius: 3px;
+  padding-left:5px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+   -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   background-color: rgba(10, 10, 10, 0.795);
+   background-position: center;
+   background-repeat: no-repeat;
+}  
+#outputcontent{
+  position: relative;
+  left:49%;
+  margin:0;
+  padding:10px;
+  height:500px;
+  width: 600px;
+  font-family:楷体;
+  vertical-align: auto;
+  border: 3px solid rgb(240, 207, 207);
+  padding:0px;
+  padding-top:0px;
+  padding-left: 0px;
+  border-radius: 0px;
+  padding-left:0px;
+  background-image: url(icon/backgroud3.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  margin-left:0;
+  margin-top: 0;
 }
 
 #transfer-button {
-  line-height: 550px;
-  margin: 10px;
+  float: left;
+  position:absolute;
+  top:340px;
+  left:720px;
+  width: 50px;/*设置按钮宽度*/
+    height: 150px;/*设置按钮高度*/
+    color:rgb(255, 248, 248);/*字体颜色*/
+    background-color:rgb(100, 100, 100);/*背景颜色*/
+    border-radius: 5px;/*让按钮变得圆滑一点*/
+    border-width: 0;/*消去按钮丑的边框*/
+    margin: 0;
+    outline: none;/*取消轮廓*/
+    font-family: KaiTi;/*字体设置为楷体*/
+    font-size: 20px;/*设置字体大小*/
+    text-align: center;/*字体居中*/
+    cursor: pointer;/*设置鼠标箭头手势*/
+}
+#input{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #footer {
+  position: relative;
+  margin-top: 20px;
   background-color: black;
   color: white;
   clear: both;

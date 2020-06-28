@@ -14,36 +14,42 @@
 
 <body>
   <div id="header">
-    <div id="header-logodiv"><img id="logo" src="/icon/circle.png"></div>
+    <div id="header-logodiv"><img id="logo" src="/icon/circle2.png"></div>
     <div id="header-name">填 填 圈</div>
-  </div>
+    </div>
   <div id="menu">
     <div id="transfer">
       <div id="transfer-imgdiv"><img id="menu-img" src="/icon/transfer.png"></div>
-      <div>转换</div>
+      <button type="button" id="menubutton">转 换</button>
     </div>
+    &nbsp;
+    &nbsp;
     <div id="transfer">
       <div id="transfer-imgdiv"><img id="menu-img" src="/icon/collect.png"></div>
-      <div>收藏</div>
+      <button type="button" id="menubutton">收 藏</button>
     </div>
     <div id="night">
       <div id="transfer-imgdiv"><img id="menu-img" src="/icon/night.png"></div>
-      <div>夜间模式</div>
+      <div >夜间模式</div>
     </div>
   </div>
   <div id="content">
-    <div id="input"><textarea rows="30" cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea>
-      </textarea></div>
-      <div id="transfer-button">转换吧！</div>
+    <input type="text" ngmodel="transfer-button" name="inputcontent" id="inputcontent" cols="100" placeholder="将需要记忆的文本粘贴至此处" />
+    <!-- <div id="input"><textarea rows="30" cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea>
+      </textarea></div> -->
+  </div>
+ 
     <div id="output">
-      <div id="model1"><textarea rows="15" cols="100" placeholder="模块1"></textarea>
+      <input type="text" name="outputcontent" id="outputcontent" cols="100" placeholder="点击转换获得内容"/>
+      <!-- <div id="model1"><textarea rows="15" cols="100" placeholder="模块1"></textarea>
         </textarea></div>
       <div id="model2"><textarea rows="15" cols="100" placeholder="模块2"></textarea>
-        </textarea></div>
+        </textarea></div> -->
+    </div>
+    <div>
+      <button type="button" id="transfer-button" ng-disable="transfer-button">点击转换</button>
     </div>
   </div>
-
-
 
 
   <div id="footer">
