@@ -11,17 +11,17 @@ class PostconController extends ResourceController {
   @Operation.post()
   Future<Response> storeContent(@Bind.body() Content inputContent) async {
     final postquery = Query<Content>(context)
-  ..values = inputContent;
+  ..values = context as Content;
     final inputContent = await postquery.insert();
 
-    return Response.ok(insertedContent);
+    return Response.ok(inputContent);
   }
 
     @Operation.put('id')
 Future<Response> updateUser(@Bind.path('id') int id, @Bind.body() Content content) async {
   final query = Query<Content>(context)
     ..where((u) => u.id).equalTo(id)
-    ..values = question;
+    ..values = content;
 
   return Response.ok(await query.updateOne());
 }

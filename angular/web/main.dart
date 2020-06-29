@@ -7,8 +7,8 @@ InputElement inputcontent;
 InputElement submit;
 OutputElement outputcontent;
 
-void main() {
-  runApp(ng.AppComponentNgFactory);}
+// void main() {
+//   runApp(ng.AppComponentNgFactory);}
 
 void getstring(){
   inputcontent = querySelector('#inputcontent');
@@ -46,7 +46,6 @@ void getstring(){
 // var element2 = document.querySelector('#username-output');
 // Element e1=querySelector('#inputcontent');
 // Element e2=querySelector('#outputcontent');
-}
 
 
 // void getstring(){
