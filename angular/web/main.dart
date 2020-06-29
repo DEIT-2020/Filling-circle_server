@@ -46,7 +46,6 @@ void getstring(){
 // var element2 = document.querySelector('#username-output');
 // Element e1=querySelector('#inputcontent');
 // Element e2=querySelector('#outputcontent');
-}
 
 
 // void getstring(){
