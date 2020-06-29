@@ -6,16 +6,21 @@ class HeroesController extends ResourceController {
   HeroesController(this.context);
 
   final ManagedContext context;
+   
+
 
   @Operation.get()
-  Future<Response> getAllHeroes() async {
-    final heroQuery = Query<Hero>(context);
-    final heroes = await heroQuery.fetch();
-
-    return Response.ok(heroes);
+Future<Response> getAllHeroes({@Bind.query('name') String name}) async {
+  final heroQuery = Query<Hero>(context);
+  if (name != null) {
+    heroQuery.where((h) => h.name).contains(name, caseSensitive: false);
   }
+  final heroes = await heroQuery.fetch();
 
-@Operation.get('id')
+  return Response.ok(heroes);
+}
+
+  @Operation.get('id')
 Future<Response> getHeroByID(@Bind.path('id') int id) async {
   final heroQuery = Query<Hero>(context)
     ..where((h) => h.id).equalTo(id);    
@@ -26,5 +31,15 @@ Future<Response> getHeroByID(@Bind.path('id') int id) async {
     return Response.notFound();
   }
   return Response.ok(hero);
+}
+
+@Operation.post()
+Future<Response> createHero(@Bind.body(ignore: ["id"]) Hero inputHero) async {
+  final query = Query<Hero>(context)
+    ..values = inputHero;
+
+  final insertedHero = await query.insert();
+
+  return Response.ok(insertedHero);
 }
 }

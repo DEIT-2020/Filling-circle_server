@@ -1,30 +1,26 @@
 import 'package:aqueduct/aqueduct.dart';
 import 'package:heroes/heroes.dart';
-import 'package:heroes/model/hero.dart';
+import 'package:heroes/model/appuser.dart';
 
-class HeroesController extends ResourceController {
-  HeroesController(this.context);
+class LoginController extends ResourceController {
+  LoginController(this.context);
 
   final ManagedContext context;
 
-  @Operation.get()
-  Future<Response> getAllHeroes() async {
-    final heroQuery = Query<Hero>(context);
-    final heroes = await heroQuery.fetch();
+@Operation.get('uphone')
+  Future<Response> getUserByID(@Bind.path('uphone') String uphone) async {
+  final userQuery = Query<Appuser>(context)
+    ..where((u) => u.uphone).equalTo(uphone);    //相当于sql的SELECT id, name FROM _question WHERE id = #;语句
+   
+  final user = await userQuery.fetchOne();//取一个//You can also fetch an object by its primary key with the method ManagedContext.fetchObjectWithID. 
 
-    return Response.ok(heroes);
-  }
-
-@Operation.get('id')
-Future<Response> getHeroByID(@Bind.path('id') int id) async {
-  final heroQuery = Query<Hero>(context)
-    ..where((h) => h.id).equalTo(id);    
-
-  final hero = await heroQuery.fetchOne();
-
-  if (hero == null) {
+  if (user == null) {
     return Response.notFound();
   }
-  return Response.ok(hero);
-}
+  else{
+    return Response.ok(user);
+    }
+  }
+
+
 }

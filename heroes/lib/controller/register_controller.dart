@@ -1,6 +1,6 @@
 import 'dart:async';
+
 import 'package:aqueduct/aqueduct.dart';
-import 'package:heroes/heroes.dart';
 import 'package:heroes/model/user.dart';
 
 class RegisterController extends ResourceController {
@@ -20,6 +20,7 @@ class RegisterController extends ResourceController {
     user
       ..salt = AuthUtility.generateRandomSalt()
       ..hashedPassword = authServer.hashPassword(user.password, user.salt);
+
     return Response.ok(await Query(context, values: user).insert());
   }
 }
