@@ -10,6 +10,5 @@ class User extends ManagedObject<_User>
   String password;
 }
 class _User extends ResourceOwnerTableDefinition {
-  @Column(unique:true)
-  String email;
+ 
 }
