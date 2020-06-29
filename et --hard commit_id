@@ -1,0 +1,292 @@
+[33mcommit facf72fe34187a0233b1fffbf25b6d0ea66eda5e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Mon Jun 29 10:10:37 2020 +0800
+
+    error
+
+[33mcommit 3d345489193d95f46416519b5c3a2f0ae2d3955c[m[33m ([m[1;32mwanningjing[m[33m)[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Mon Jun 29 09:13:14 2020 +0800
+
+    整理
+
+[33mcommit e1fd992d314ed8848f07765cd2a253c7f8d9edaf[m
+Merge: c40cd3f a0934e0
+Author: jinhao <howardking74@foxmail.com>
+Date:   Mon Jun 29 09:04:12 2020 +0800
+
+    html4
+
+[33mcommit c40cd3fc528e3d58f67bbb3a0217f513872c0907[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Mon Jun 29 08:58:16 2020 +0800
+
+    html4
+
+[33mcommit a0934e0efe1c64b776800eee2b14cb4328875c90[m
+Merge: d20e3c0 2d5cd2f
+Author: Wanningjing <13655519148@163.com>
+Date:   Mon Jun 29 08:49:02 2020 +0800
+
+    final
+
+[33mcommit 2d5cd2f32eaa074c33dfc414c55255d1fe2f6e98[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Mon Jun 29 08:45:28 2020 +0800
+
+    final
+
+[33mcommit d20e3c0580d5aa84284b26dc418ed37f3af815e7[m
+Merge: 5a370e0 83534ec
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun Jun 28 23:44:45 2020 +0800
+
+    none
+
+[33mcommit 83534ec68ba3d520c87cd33d98df5574d53d7895[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun Jun 28 23:39:01 2020 +0800
+
+    tip
+
+[33mcommit 5a370e007b4394fd180637b3124716f37f9854f2[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sun Jun 28 23:29:13 2020 +0800
+
+    test
+
+[33mcommit 222bc271910e89de3ca7133db36299d28b5f56ad[m
+Merge: 8c6611a bf2065e
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sun Jun 28 21:54:05 2020 +0800
+
+    html
+
+[33mcommit bf2065e80cd96ffb205ca0bbfe5fcad551e9235a[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sun Jun 28 21:51:13 2020 +0800
+
+    html
+
+[33mcommit 8c6611a2558837d0a1b01f4299ebd4a51362a101[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun Jun 28 21:29:51 2020 +0800
+
+    main.dart
+
+[33mcommit 887c7c88963012ec66dbfd5997554b8545439e92[m
+Merge: e7828a4 374c33d
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sun Jun 28 18:57:47 2020 +0800
+
+    1
+
+[33mcommit 374c33d508a72050f092d9d9f5515f01d0bff5c4[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sun Jun 28 18:54:44 2020 +0800
+
+    1
+
+[33mcommit 24e60c17119cb672906a83a36fde9ad1f13e0c6c[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sun Jun 28 18:50:08 2020 +0800
+
+    11
+
+[33mcommit e7828a4b6dae89bcfa240e0660e9b8d7865712d1[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun Jun 28 17:55:33 2020 +0800
+
+    update
+
+[33mcommit 5ba44d0aaf40fa69ac5aa30e5e21c2b0c40fe4d8[m
+Merge: 3028601 74bf980
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun Jun 28 17:19:43 2020 +0800
+
+    css update
+
+[33mcommit 3028601f0cc27c4243806b6e4894d6d1eba0dfbb[m[33m ([m[1;32mwnj[m[33m)[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun Jun 28 16:35:20 2020 +0800
+
+    css update
+
+[33mcommit 74bf9807a2a3927a7bebebbee6145854928cc9c1[m
+Merge: 11cd366 7f4324d
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sat Jun 27 20:51:06 2020 +0800
+
+    Merge branch 'jinhao'
+
+[33mcommit 7f4324dc76192b9f70090765fca4dce171ea9624[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sat Jun 27 20:50:14 2020 +0800
+
+    test
+
+[33mcommit 11cd3669f6971f71af1e33e555b88abfbbc4012c[m
+Merge: 3890b32 c5d50d6
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sat Jun 27 20:48:41 2020 +0800
+
+    Merge branch 'master' of https://github.com/DEIT-2020/Filling-circle_server
+
+[33mcommit c5d50d688d837342a3845f25e2dbb2c4072bed69[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sat Jun 27 20:43:58 2020 +0800
+
+    update
+
+[33mcommit 3890b328b60bd8706c9b629b6eee3d6746b88211[m
+Merge: a20b9ce 263347c
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sat Jun 27 20:41:29 2020 +0800
+
+    login
+
+[33mcommit a20b9ced8eda7ab7e924e46ce22874904d83b9b4[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sat Jun 27 11:30:17 2020 +0800
+
+    login
+
+[33mcommit 49ca626e86fe8aa699d788af5fe0736a12255496[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sat Jun 27 08:30:31 2020 +0800
+
+    login
+
+[33mcommit 263347c55efa897549363c373323d0a56505b8c6[m
+Merge: 0d322b2 06e8208
+Author: Wanningjing <13655519148@163.com>
+Date:   Sat Jun 27 00:26:43 2020 +0800
+
+    Merge branch 'wanningjing'
+
+[33mcommit 06e820884573c5ba9e750cce13d6f277247da5a8[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sat Jun 27 00:25:46 2020 +0800
+
+    update channel
+
+[33mcommit 0d322b2edbad5bf46627b19d070922de486924c4[m
+Author: Wanningjing <63575219+Wanningjing@users.noreply.github.com>
+Date:   Fri Jun 26 22:18:38 2020 +0800
+
+    Update README.md
+
+[33mcommit 59ce3e0293f4c7a6ce4db8f857d046fabfcd2684[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Fri Jun 26 22:11:14 2020 +0800
+
+    server
+
+[33mcommit a4e47fe311c1f18caaa8e33839ac7ec7ebe1c423[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Fri Jun 26 16:05:07 2020 +0800
+
+    index
+
+[33mcommit 12832d937d9c4245088b016d8dedf65843e474bd[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Fri Jun 26 11:34:38 2020 +0800
+
+    ceshi
+
+[33mcommit 969b2a0ccf8a0a79d8ed30b3d511a18242f5c24b[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Thu Jun 25 14:12:17 2020 +0800
+
+    angular
+
+[33mcommit a3cf3edd98d273fbdde44dd677c4bbbb0b5b30f7[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Thu Jun 25 13:08:47 2020 +0800
+
+    angular
+
+[33mcommit e5071da084b9c29b38e1e0c9dc90d39aad8089cc[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Mon Jun 8 11:39:04 2020 +0800
+
+    0608新增路由
+
+[33mcommit 5ab766558d9018262b864879d79ff7f20a5fed76[m
+Author: jinhao <howardking74@foxmail.com>
+Date:   Sun May 31 14:02:24 2020 +0800
+
+    jh0531
+
+[33mcommit 457c2521e95bcb3916580db4288c80fee883abc6[m
+Author: [10184500135] <[howardking74@foxmail.com]>
+Date:   Sat May 30 15:48:01 2020 +0800
+
+    0530
+
+[33mcommit 48487f53cf45db724c73ed90b6bb7f20d000e660[m[33m ([m[1;31morigin/jinhao[m[33m)[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Mon May 18 14:42:54 2020 +0800
+
+    初始框架
+
+[33mcommit f2e6dc9128dd831e1a902368375b7d84aa53288c[m
+Merge: 769f666 de6b6fe
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun May 17 20:24:26 2020 +0800
+
+    Merge branch 'master' of https://github.com/DEIT-2020/Filling-circle_server
+
+[33mcommit 769f6667060dcec8d93b069eaf39f9108e412773[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sun May 17 20:21:55 2020 +0800
+
+    update .gitignore
+
+[33mcommit de6b6fe790c9f2428fd064b63dd505cb48bd0ef1[m
+Author: Wanningjing <63575219+Wanningjing@users.noreply.github.com>
+Date:   Sun May 17 00:08:32 2020 +0800
+
+    初始框架
+
+[33mcommit 550c6571839b79828f971649158e0bcd4407cafa[m
+Author: Wanningjing <63575219+Wanningjing@users.noreply.github.com>
+Date:   Sun May 17 00:07:47 2020 +0800
+
+    初始框架
+
+[33mcommit a3138f7bb45c663c00843a46840b03af29c6a16e[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sat May 16 23:47:19 2020 +0800
+
+    初始框架
+
+[33mcommit bb0b79d5cddf44dc1f05571073749373f1ad5786[m
+Author: Wanningjing <63575219+Wanningjing@users.noreply.github.com>
+Date:   Sat May 16 01:10:52 2020 +0800
+
+    initial
+
+[33mcommit 78a3b22ba7131aa8dcf3db4c6816e842ca1b214a[m
+Author: Wanningjing <63575219+Wanningjing@users.noreply.github.com>
+Date:   Sat May 16 01:09:57 2020 +0800
+
+    initial
+
+[33mcommit d9dbaa7b9c245458f5295bce23c4c013d54f05fe[m
+Author: Wanningjing <63575219+Wanningjing@users.noreply.github.com>
+Date:   Sat May 16 01:02:37 2020 +0800
+
+    Delete config.src.yaml
+
+[33mcommit 7a9aa5bae23acff5f3cc49417ff32848f40fe555[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Sat May 16 00:55:01 2020 +0800
+
+    初始框架
+
+[33mcommit 4c495e670d8e703a61ef95842484ea169a84e2df[m
+Author: Wanningjing <13655519148@163.com>
+Date:   Thu May 14 15:34:20 2020 +0800
+
+    first commit
