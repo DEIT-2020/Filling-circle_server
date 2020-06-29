@@ -7,8 +7,8 @@ InputElement inputcontent;
 InputElement submit;
 OutputElement outputcontent;
 
-void main() {
-  runApp(ng.AppComponentNgFactory);}
+// void main() {
+//   runApp(ng.AppComponentNgFactory);}
 
 void getstring(){
   inputcontent = querySelector('#inputcontent');
