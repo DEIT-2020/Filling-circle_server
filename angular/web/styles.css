@@ -208,7 +208,7 @@ form button:hover {
   background-color: rgba(10, 10, 10, 0.795);
 }
 
-#content-output {
+#outputcontent {
   height: 500px;
   width: 600px;
   font-family: 楷体;

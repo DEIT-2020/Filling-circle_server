@@ -12,10 +12,10 @@
 
 <body>
   <!-- <a href="index.html"> -->
-    <div id="header">
-      <div id="header-logodiv"><img id="logo" src="/icon/circle2.png"></div>
-      <div id="header-name">填 填 圈</div>
-    </div>
+  <div id="header">
+    <div id="header-logodiv"><img id="logo" src="/icon/circle2.png"></div>
+    <div id="header-name">填 填 圈</div>
+  </div>
   <!-- </a> -->
   <div id="menu">
     <a href="transfer.html">
@@ -43,10 +43,10 @@
     <div id="input">
       <textarea rows="30" cols="100" type="text" ng-model="transfer-button" name="inputcontent" id="inputcontent"
         cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea>
+
       <!--         
         <textarea rows="30" cols="100" type="text" ng-model="transfer-button" name="username" id="username"
         cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea> -->
-
     </div>
     <div id="transfer-button-div">
       <button type="submit" id="transfer-button" ng-disabled="transfer-button" (click)="transferpp()">点击转换</button>
@@ -55,14 +55,15 @@
     <div id="output">
       <textarea rows="30" cols="100" type="text" name="outputcontent" id="outputcontent"
         placeholder="点击转换获得内容"></textarea>
+        <button type="button" id="" onclick="document.getElementById('loading').style.display='';">收藏内容</button>
+    </div>
+    <!-- 收藏按钮 -->
 
-      <!-- 收藏按钮 -->
-      <button type="button" id="" onclick="document.getElementById('loading').style.display='';">收藏内容</button>
-      <div id="loading" style="display:none">收藏失败</div>
-      <!-- <textarea rows="30" cols="100" type="text" name="username-output" id="username-output"
+    <div id="loading" style="display:none">收藏失败</div>
+    <!-- <textarea rows="30" cols="100" type="text" name="username-output" id="username-output"
         placeholder="点击转换获得内容"></textarea>
         <output id="username-output"></output> -->
-    </div>
+  </div>
 
   </div>
   <div id="footer">
