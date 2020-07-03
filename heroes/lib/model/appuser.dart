@@ -5,13 +5,10 @@ class Appuser extends ManagedObject<_Appuser> implements _Appuser {}
 class _Appuser{
   @primaryKey
   String id;
-  
-  @Column(unique: true)
-  String uphone;
 
   @Column(unique:true)
-  String uname;
+  String username;
 
   @Column(unique:true)
-  String uassword;
+  String userpassword;
 }

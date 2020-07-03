@@ -1,73 +1,14 @@
-import 'dart:html';
 import 'package:angular/angular.dart';
-import 'package:angular_dart/app_component.template.dart' as ng;
+import 'package:angular_router/angular_router.dart';
+import 'package:angular_tour_of_heroes/app_component.template.dart' as ng;
 
+import 'main.template.dart' as self;
 
-InputElement inputcontent;
-InputElement submit;
-OutputElement outputcontent;
+@GenerateInjector(
+  routerProvidersHash, // You can use routerProviders in production
+)
+final InjectorFactory injector = self.injector$Injector;
 
-// void main() {
-//   runApp(ng.AppComponentNgFactory);}
-
-void getstring(){
-  inputcontent = querySelector('#inputcontent');
-  outputcontent=querySelector('#outputcontent');
+void main() {
+  runApp(ng.AppComponentNgFactory, createInjector: injector);
 }
-
-
-
-
-// void getstring(){
-//   inputcontent = querySelector('#inputcontent');
-//   outputcontent=querySelector('#outputcontent');
-// }
-
-
-// void main() {
-//   InputElement username = querySelector('#username');
-//   InputElement submit = querySelector('#save');
-//   Element output = querySelector('#username-output');
-//   Storage localStorage = window.localStorage;
-
-//   String savedUsername = localStorage['username'];
-//   if (savedUsername != null) {
-//     output.text = savedUsername;
-//   }
-
-//   submit.onClick.listen((Event e) {
-//     output.text = username.value;
-//     localStorage['username'] = username.value;
-//   });
-// }
-  
-// void transferpp(){
-// var element1 = document.querySelector('#username'); 
-// var element2 = document.querySelector('#username-output');
-// Element e1=querySelector('#inputcontent');
-// Element e2=querySelector('#outputcontent');
-
-
-// void getstring(){
-//   inputcontent = querySelector('#inputcontent');
-//   outputcontent=querySelector('#outputcontent');
-// }
-
-
-
-// void main() {
-//   InputElement username = querySelector('#username');
-//   InputElement submit = querySelector('#save');
-//   Element output = querySelector('#username-output');
-//   Storage localStorage = window.localStorage;
-
-//   String savedUsername = localStorage['username'];
-//   if (savedUsername != null) {
-//     output.text = savedUsername;
-//   }
-
-//   submit.onClick.listen((Event e) {
-//     output.text = username.value;
-//     localStorage['username'] = username.value;
-//   });
-// }

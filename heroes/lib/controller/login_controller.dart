@@ -7,10 +7,10 @@ class LoginController extends ResourceController {
 
   final ManagedContext context;
 
-@Operation.get('uphone')
-  Future<Response> getUserByID(@Bind.path('uphone') String uphone) async {
+@Operation.get('username')
+  Future<Response> getUserByID(@Bind.path('username') String uphone) async {
   final userQuery = Query<Appuser>(context)
-    ..where((u) => u.uphone).equalTo(uphone);    //相当于sql的SELECT id, name FROM _question WHERE id = #;语句
+    ..where((u) => u.username).equalTo("username");    //相当于sql的SELECT id, name FROM _question WHERE id = #;语句
    
   final user = await userQuery.fetchOne();//取一个//You can also fetch an object by its primary key with the method ManagedContext.fetchObjectWithID. 
 

@@ -1,5 +1,5 @@
 import 'package:angular/angular.dart';
-
+import 'dart:html';
 import 'login.dart';
 
 // AngularDart info: https://webdev.dartlang.org/angular
@@ -10,6 +10,3 @@ import 'login.dart';
   styleUrls: ['styles.css'],
   templateUrl: 'login.html',
 )
-class AppComponent {
-  // Nothing here yet. All logic is in TodoListComponent.
-}

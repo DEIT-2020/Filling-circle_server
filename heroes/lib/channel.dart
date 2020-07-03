@@ -1,12 +1,11 @@
 import 'heroes.dart';
+import 'model/user.dart';
+import 'controller/register_controller.dart';
+import 'controller/login_controller.dart';
+import 'controller/appuser_controller.dart';
+import 'controller/postcon_controller.dart';
+import 'controller/getcon_controller.dart';
 import 'controller/heroes_controller.dart';
-import 'package:aqueduct/managed_auth.dart';
-import 'package:heroes/model/user.dart';
-import 'package:heroes/controller/register_controller.dart';
-import 'package:heroes/controller/login_controller.dart';
-import 'package:heroes/controller/appuser_controller.dart';
-import 'package:heroes/controller/postcon_controller.dart';
-import 'package:heroes/controller/getcon_controller.dart';
 
 class HeroesChannel extends ApplicationChannel {
   ManagedContext context;
@@ -28,41 +27,30 @@ class HeroesChannel extends ApplicationChannel {
         config.database.databaseName);
 
     context = ManagedContext(dataModel, persistentStore);
-
-    final authStorage = ManagedAuthDelegate<User>(context);
-    authServer = AuthServer(authStorage);
   }
 
   @override
   Controller get entryPoint {
     final router = Router();
+    router
+      .route("/example")
+      .linkFunction((request) async {
+        return Response.ok({"key": "value"});
+      });
 
-    // router
-    //   .route("/example")
-    //   .linkFunction((request) async {
-    //     return Response.ok({"key": "value"});
-    //   });
 
-    router.route('/auth/token').link(() => AuthController(authServer));
-
-    router.route('/heroes/[:id]').link(() => HeroesController(context));
-
-    router.route("/login").link(() => UserController(context));
+    router.route("/login/[:username]").link(() => UserController(context));
+    router.route("/login/[:username]").link(() => LoginController(context));
 
     router
-        .route('/login/register')
+        .route("/register/[:username]")
         .link(() => RegisterController(context, authServer));
 
-    router.route("/online_user").linkFunction((request) async {
-      return Response.ok({"key": "online_user"});
-    });
-
-    router.route("/collection/[:qid]").link(() => GetconController(context));
+    router.route("/collection/[:username]").link(() => GetconController(context));
 
     router.route("/homepage").link(() => PostconController(context));
 
-    router.route("/login/[:uphone]").link(() => LoginController(context));
-
+   
     return router;
   }
 }

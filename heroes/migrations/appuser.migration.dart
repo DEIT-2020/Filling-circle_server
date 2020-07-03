@@ -5,14 +5,21 @@ class Migration2 extends Migration {
   @override
   Future upgrade() async {
     database.createTable(SchemaTable("_appUser", [
-      SchemaColumn("userid", ManagedPropertyType.bigInteger,
+      SchemaColumn("id", ManagedPropertyType.bigInteger,
           isPrimaryKey: true,
           autoincrement: true,
           isIndexed: false,
           isNullable: false,
           isUnique: false),
 
-      SchemaColumn("username", ManagedPropertyType.string,
+          SchemaColumn("uphone", ManagedPropertyType.bigInteger,
+          isPrimaryKey: true,
+          autoincrement: true,
+          isIndexed: false,
+          isNullable: false,
+          isUnique: false),
+
+      SchemaColumn("uname", ManagedPropertyType.string,
           isPrimaryKey: false,
           autoincrement: false,
           isIndexed: false,
