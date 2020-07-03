@@ -1,0 +1,57 @@
+<div id="header">
+  <div id="header-logodiv"><img id="logo" src="/icon/circle2.png"></div>
+  <div id="header-name">填 填 圈</div>
+</div>
+<!-- </a> -->
+<div id="menu">
+  <a href="todo_list_component.html">
+    <div id="transfer">
+      <div id="transfer-imgdiv"><img id="menu-img" src="/icon/transfer.png"></div>
+      <button type="button" id="menubutton">转 换 器</button>
+    </div>
+  </a>
+  &nbsp;
+  &nbsp;
+  <a href="collect.html">
+    <div id="transfer">
+      <div id="transfer-imgdiv"><img id="menu-img" src="/icon/collect.png"></div>
+      <button type="button" id="menubutton" (click)="collectaction">收 藏 夹</button>
+    </div>
+  </a>
+  <div id="night">
+    <div id="transfer-imgdiv"><img id="menu-img" src="/icon/night.png"></div>
+    <div>夜间模式</div>
+  </div>
+</div>
+
+
+<div id="content">
+  <div id="input">
+    <textarea rows="30" cols="100" type="text" ng-model="transfer-button" name="inputcontent" id="inputcontent"
+      cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea>
+
+    <!--         
+      <textarea rows="30" cols="100" type="text" ng-model="transfer-button" name="username" id="username"
+      cols="100" placeholder="将需要记忆的文本粘贴至此处"></textarea> -->
+  </div>
+  <div id="transfer-button-div">
+    <button type="submit" id="transfer-button" ng-disabled="transfer-button" (click)="transfer()" keypressUpdate [(ng-model)]="incontent">点击转换</button>
+  </div>
+  <!-- <input type="submit" id="save" value="Save"> -->
+  <div id="output">
+    <textarea rows="30" cols="100" type="text" name="outputcontent" id="outputcontent" keypressUpdate [(ng-model)]="outcontent"
+      placeholder="点击转换获得内容"></textarea>
+      <button type="button" (click)="collect() "id="" onclick="document.getElementById('loading').style.display='';">收藏内容</button>
+  </div>
+  <!-- 收藏按钮 -->
+
+  <div id="loading" style="display:none">收藏失败</div>
+  <!-- <textarea rows="30" cols="100" type="text" name="username-output" id="username-output"
+      placeholder="点击转换获得内容"></textarea>
+      <output id="username-output"></output> -->
+</div>
+
+</div>
+<div id="footer">
+  ©2020 Zubuzu. All rights reserved.
+</div>
